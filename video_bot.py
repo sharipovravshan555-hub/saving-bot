@@ -35,7 +35,7 @@ from telegram.ext import (
 from telegram.request import HTTPXRequest
 
 # ================= CONFIG =================
-BOT_TOKEN = os.getenv("8596773459:AAEexIdr8adSZBqJZef3h5dH9gR4VdUl5sA")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_CHAT_ID = 5151373754
 
 MAX_CONCURRENT_DOWNLOADS = 2
