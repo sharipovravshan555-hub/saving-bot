@@ -408,7 +408,7 @@ async def music_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
     song = songs[index]
     url = song["url"]
 
-    await q.edit_message_text("⏳ Yuklanmoqda...")
+
 
     # MP3 sifatida yuklaymiz
     context.application.create_task(
