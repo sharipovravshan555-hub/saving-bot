@@ -1,0 +1,16 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /app/data
+      YTDLP_NODE_EXECUTABLE: /usr/local/bin/node
+      YTDLP_POT_SERVER_HOME: /app/vendor/bgutil-ytdlp-pot-provider/server
+    volumes:
+      - bot_data:/app/data
+    stop_grace_period: 30s
+
+volumes:
+  bot_data:
